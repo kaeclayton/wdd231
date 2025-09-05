@@ -23,4 +23,13 @@
     .navigation a {
         border: none;
     }
+
+    .me {
+        display: flex;
+    }
+
+    .photo img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

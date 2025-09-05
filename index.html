@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 <body>
@@ -27,17 +28,29 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Hello! I am excited to be doing school again and look forward to getting my degree in Software Development. Most of my life is taken up being a mom to 5 kids, ranging in ages from 8 to 24.  My older two children are off on adventures out of the house. The three younger ones keep me busy and I love it. In my free time *insert laughter* I like to build with Lego, play games, and learn new languages.</p>
-        </section>
-        <section class="photo">
-            <h2>Student Photo</h2>
-            <img src="images/profile.jpg" alt="Portrait photo of Kae Clayton">
-        </section>
+        <div class="me">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hello! I am excited to be doing school again and look forward to getting my degree in Software Development. Most of my life is taken up being a mom to 5 kids, ranging in ages from 8 to 24.  My older two children are off on adventures out of the house. The three younger ones keep me busy and I love it. In my free time *insert laughter* I like to build with Lego, play games, and learn new languages.</p>
+            </section>
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Portrait photo of Kae Clayton">
+            </section>
+        </div>    
         <section class="courses">
-            <h2>Web Certificate Courses</h2>
-
+            <h2>Web and Computer Programming Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="filter-all" class="active">All Courses</button>
+                <button id="filter-wdd">WDD Courses</button>
+                <button id="filter-cse">CSE Courses</button>
+            </div>
+            <div id="courses-container" class="courses-container">
+                <!-- Courses dynamically inserted here -->
+            </div>
+            <div id="credits" class="credits">
+                <!-- Total credits will be inserted here -->
+            </div>
         </section>
     </main>
     <footer>
