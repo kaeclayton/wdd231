@@ -10,13 +10,6 @@ pale goldenrod
     box-sizing: border-box;
  }
 
-.epunda-slab-font {
-    font-family: "Epunda Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
  /* Header */
  header {
     display: grid;
@@ -100,6 +93,7 @@ h1 {
 
 h2 {
     color: darkblue;
+    text-align: center;
     margin-left: 10px;
     margin-right: 10px;
     background-color: palegoldenrod;
