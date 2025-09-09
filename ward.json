@@ -1,0 +1,43 @@
+{
+    "family_name": "Clayton",
+    "date_moved_in": "May 5, 2005",
+    "number_of_records": 7,
+    "if_visited": true,
+    "family_members": [
+        {
+            "name": "Kae",
+            "gender": "female",
+            "birthdate": "Dec 1975"
+        },
+        {
+            "name": "Brad",
+            "gender": "male",
+            "birthdate": "May 1977"
+        },
+        {
+            "name": "Isaak",
+            "gender": "Male",
+            "birthdate": "Dec 2000"
+        },
+        {
+            "name": "Micaela",
+            "gender": "female",
+            "birthdate": "Aug 2003"
+        },
+        {
+            "name": "Caleb",
+            "gender": "male",
+            "birthdate": "Jun 2009"
+        },
+        {
+            "name": "Abram",
+            "gender": "male",
+            "birthdate": "Aug 2013"
+        },
+        {
+            "name": "Finnley",
+            "gender": "female",
+            "birthdate": "Jul 2017"
+        }
+    ]
+}
