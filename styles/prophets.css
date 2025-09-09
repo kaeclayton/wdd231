@@ -1,0 +1,38 @@
+* {
+    font-family: Cambria, Cochin, Georgia, serif;
+    background-color: aliceblue;
+}
+
+header {
+    color: #3a0ca3;
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+}
+
+section {
+    background-color: #bfdbf7;
+    border: solid #a31621 1px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #3a0ca3;
+    background-color: #bfdbf7;
+}
+
+p {
+    background-color: #bfdbf7;
+    text-align: center;
+}
+
+img {
+    border-radius: 4px;
+}
