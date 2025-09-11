@@ -86,16 +86,32 @@ header span {
     border-radius: var(--border-radius);
 }
 
+/* Hero */
+
+.hero {
+    border-radius: var(--border-radius);
+}
+
+/* Main */
+
+main {
+    padding: 20px;
+}
+
 /* Footer */
 
 footer {
     display: flex;
     font-size: small;
     justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
 }
 
 
 .chamber p, .foot p {
     margin: 0.1em 0;
     line-height: 1.2;
+    color: var(--text-color);
 }
