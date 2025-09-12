@@ -12,7 +12,20 @@
 }
 
 /* Header */
+/* header, nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255,255,255,0.9);
+} */
+
 header {
+    /* display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 80%, transparent 100%); */
     display: grid;
     grid-template-columns: 36px auto 44px;
     padding: 5px 0 5px 10px;
@@ -53,6 +66,25 @@ header span {
 }
 
 /* Navigation */
+/* nav {
+    top: auto;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+} */
+
+/* nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+} */
 
 .navigation {
     display: none;
@@ -87,14 +119,22 @@ header span {
 }
 
 /* Hero */
+/* section {
+    position: relative;
+    width: 100%;
+} */
 
 .hero {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: var(--border-radius);
 }
 
 /* Main */
 
 main {
+    margin-top: 2rem;
     padding: 20px;
 }
 

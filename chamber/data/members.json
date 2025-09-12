@@ -1,111 +1,129 @@
 {
     "members": [
         {
-            "name":"", 
+            "name":"Alekona Kauai LLC", 
             "address":{
-                "street":"",
-                "city":"",
-                "zipcode":""}, 
-            "phone":"", 
-            "websiteUrl":"", 
-            "imageFile":"", 
-            "membershipLevel":""
+                "street":"PO 237",
+                "city":"Koloa",
+                "state": "HI",
+                "zipcode":"96756"}, 
+            "phone":"808-971-1134", 
+            "websiteUrl":"https://alekonakauai.com/", 
+            "imageFile":"images/alekona-kauai-logo.webp", 
+            "membershipLevel": 2,
+            "businessType": "Accommodations-Vacation Rentals"
         },
         {
-            "name": "",
+            "name": "Lydgate Farms",
             "address": {
-                "street": "",
-                "city": "",
-                "zipcode": ""
+                "street": "5730 Olohena Road",
+                "city": "Kapaa",
+                "state": "HI",
+                "zipcode": "96746"
             },
-            "phone": "",
-            "websiteUrl": "",
-            "imageFile": "",
-            "membershipLevel": ""
+            "phone": "808-821-1857",
+            "websiteUrl": "https://lydgatefarms.com/",
+            "imageFile": "images/lydgate-farms-logo.webp",
+            "membershipLevel": 1,
+            "businessType": "Agriculture"
         },
         {
-            "name": "",
+            "name": "Kauai Sea Tours",
             "address": {
-                "street": "",
-                "city": "",
-                "zipcode": ""
+                "street": "4353 Waialo Road",
+                "city": "Eleele",
+                "state": "HI",
+                "zipcode": "96705"
             },
-            "phone": "",
-            "websiteUrl": "",
-            "imageFile": "",
-            "membershipLevel": ""
+            "phone": "808-335-5309",
+            "websiteUrl": "https://kauaiseatours.com/",
+            "imageFile": "images/kauai-sea-tours-logo.webp",
+            "membershipLevel": 3,
+            "businessType": "Boats, Cruise/Charter"
         },
         {
-            "name": "",
+            "name": "Layton Construction Company",
             "address": {
-                "street": "",
-                "city": "",
-                "zipcode": ""
+                "street": "4463 Pahee Street",
+                "city": "Lihue",
+                "state": "HI",
+                "zipcode": "96766"
             },
-            "phone": "",
-            "websiteUrl": "",
-            "imageFile": "",
-            "membershipLevel": ""
+            "phone": "808-245-8680",
+            "websiteUrl": "https://www.laytonconstruction.com/contact/hawaii/",
+            "imageFile": "images/layton-logo.webp",
+            "membershipLevel": 3,
+            "businessType": "General Construction"
         },
         {
-            "name": "",
+            "name": "Get Fit Kaua'i",
             "address": {
-                "street": "",
-                "city": "",
-                "zipcode": ""
+                "street": "PO Box 392",
+                "city": "Kilauea",
+                "state": "HI",
+                "zipcode": "96754"
             },
-            "phone": "",
-            "websiteUrl": "",
-            "imageFile": "",
-            "membershipLevel": ""
+            "phone": "808-212-4765",
+            "websiteUrl": "https://getfitkauai.com/",
+            "imageFile": "images/get-fit-kauai-logo.webp",
+            "membershipLevel": 1,
+            "businessType": "Health & Fitness"
         },
         {
-            "name": "",
+            "name": "Ocean Course at Hokuala",
             "address": {
-                "street": "",
-                "city": "",
-                "zipcode": ""
+                "street": "3351 Hoolaulea Way",
+                "city": "Lihue",
+                "state": "HI",
+                "zipcode": "96766"
             },
-            "phone": "",
-            "websiteUrl": "",
-            "imageFile": "",
-            "membershipLevel": ""
+            "phone": "808-241-6000",
+            "websiteUrl": "https://www.golfhokuala.com/",
+            "imageFile": "images/ocean-course-logo.webp",
+            "membershipLevel": 3,
+            "businessType": "Golf Course"
         },
         {
-            "name": "",
+            "name": "Lava Lava Beach Club",
             "address": {
-                "street": "",
-                "city": "",
-                "zipcode": ""
+                "street": "420 Papaloa Street",
+                "city": "Kapaa",
+                "state": "HI",
+                "zipcode": "96746"
             },
-            "phone": "",
-            "websiteUrl": "",
-            "imageFile": "",
-            "membershipLevel": ""
+            "phone": "808-241-5282",
+            "websiteUrl": "https://www.lavalavabeachclub.com/",
+            "imageFile": "lava-lava-logo.webp",
+            "membershipLevel": 3,
+            "businessType": "Restaurants/Food Service"
         },
         {
-            "name": "",
+            "name": "Basket Boutique Kauai",
             "address": {
-                "street": "",
-                "city": "",
-                "zipcode": ""
+                "street": "PO Box 493",
+                "city": "Lawai",
+                "state": "HI",
+                "zipcode": "96765"
             },
-            "phone": "",
-            "websiteUrl": "",
-            "imageFile": "",
-            "membershipLevel": ""
+            "phone": "808-652-2309",
+            "websiteUrl": "https://basketboutiquekauai.com/",
+            "imageFile": "images/basket-boutique-logo.webp",
+            "membershipLevel": 1,
+            "businessType": "Retail"
         },
         {
-            "name": "",
+            "name": "Papaya's Natural Foods",
             "address": {
-                "street": "",
-                "city": "",
-                "zipcode": ""
+                "street": "4-901 Kuhio Highway",
+                "city": "Kapaa",
+                "state": "HI",
+                "zipcode": "96746"
             },
-            "phone": "",
-            "websiteUrl": "",
-            "imageFile": "",
-            "membershipLevel": ""
+            "phone": "808-823-0910",
+            "websiteUrl": "https://papayasnaturalfoods.com/",
+            "imageFile": "images/papayas-logo.webp",
+            "membershipLevel": 2,
+            "businessType": "Retail-Grocers"
         }
     ]    
 }
