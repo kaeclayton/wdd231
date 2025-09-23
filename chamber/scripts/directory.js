@@ -17,6 +17,9 @@ const displayBusinesses = (members) => {
         const phone = document.createElement('p');
         const website = document.createElement('a');
         const type = document.createElement('p');
+        memberCard.className = 'business-card';
+        memberCard.style.minHeight = '300px';
+        memberCard.style.contain = 'layout';
         logo.setAttribute('src', member.imageFile);
         logo.setAttribute('alt', `Logo for ${member.name}`);
         logo.setAttribute('loading', 'lazy');
@@ -44,7 +47,6 @@ const displayBusinesses = (members) => {
         memberCard.appendChild(phone);
         memberCard.appendChild(website);
         memberCard.appendChild(type);
-        memberCard.className = 'business-card';
         cards.appendChild(memberCard);
     });
     directoryContainer.classList.add('grid-view');

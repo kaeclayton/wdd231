@@ -85,6 +85,8 @@ h1 {
 .business-card {
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
+    min-height: 300px;
+    contain: layout;
     padding: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -94,7 +96,8 @@ h1 {
 }
 .business-logo {
     max-width: 150px;
-    height: auto;
+    height: 150px;
+    object-fit: contain;
     display: block;
     border-radius: var(--border-radius);
 }
