@@ -38,16 +38,13 @@
         </ul>
     </nav>
     <section>
-        <img src="images/kauai-hero-800w.webp"
-            srcset="
-                images/kauai-hero-400.webp 400w,
-                images/kauai-hero-800w.webp 800w,
-                images/kauai-hero-1200w.webp 1200w,
-                images/kauai-hero-1900w.webp 1900w
-            "
-            alt="Kaua'i Chamber of Commerce hero image"
-            class="hero">
-    </section>    
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/kauai-hero-400.webp">
+            <source media="(max-width: 800px)" srcset="images/kauai-hero-800w.webp">
+            <source media="(max-width: 1200px)" srcset="images/kauai-hero-1200w.webp">
+            <img src="images/kauai-hero-800w.webp" alt="Kaua'i Chamber of Commerce hero image" class="hero" loading="lazy" width="800" height="400">
+        </picture>
+    </section>
     <main>
         <h1>Directory</h1>
         <div class="toggle">

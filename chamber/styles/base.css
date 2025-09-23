@@ -5,12 +5,10 @@
     --text-color: #264653;
     --border-radius: 5px;
 }
-
 * {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
-
 /* Header */
 header {
     display: grid;
@@ -27,19 +25,16 @@ header {
     background-color: rgba(255, 255, 255, 0.9);
     box-sizing: border-box;
 }
-
 header img {
     display: block;
     width: 100%;
     height: auto;
     padding-bottom: 5px;
 }
-
 header span {
     font-size: 1.2rem;
     color: var(--text-color);
 }
-
 /* Hamburger */
 .hamburger {
     background: none;
@@ -47,17 +42,14 @@ header span {
     color: var(--primary-color);
     cursor: pointer;
 }
-
 .hamburger::after {
     content: "\2630";
     font-size: 2rem;
 }
-
 .hamburger.show::after {
     content: "\00D7";
     font-size: 2rem;
 }
-
 /* Navigation */
 nav {
     position: absolute;
@@ -66,23 +58,19 @@ nav {
     width: 100%;
     z-index: 100;
 }
-
 .navigation {
     display: none;
     position: absolute;
     background-color: var(--secondary-color);
 }
-
 .navigation.show {
     display: block;
 }
-
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .navigation a {
     display: block;
     padding: .85rem 10px;
@@ -90,39 +78,31 @@ nav {
     text-decoration: none;
     border-bottom: solid 1px var(--primary-color);
 }
-
 .navigation li.current {
     background-color: var(--background-color);
     border-radius: var(--border-radius);
 }
-
 .navigation a:hover {
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
 }
-
 /* Hero */
 section {
     position: relative;
     margin-top: 0;
 }
-
 .hero {
     width: 100%;
     height: auto;
     display: block;
     border-radius: var(--border-radius);
 }
-
 /* Main */
-
 main {
     margin-top: 2rem;
     padding: 20px;
 }
-
 /* Footer */
-
 footer {
     display: flex;
     font-size: small;
@@ -131,14 +111,11 @@ footer {
     padding: 10px;
     border-radius: var(--border-radius);
 }
-
-
 .chamber p, .foot p {
     margin: 0.1em 0;
     line-height: 1.2;
     color: var(--text-color);
 }
-
 .social img {
     width: 16px;
 }
