@@ -26,8 +26,8 @@ const displayBusinesses = (members) => {
         memberName.textContent = `${member.name}`;
         memberName.className = 'business-name';
         address.innerHTML = `
-            <p>${member.address.street}</p>
-            <p>${member.address.city}, ${member.address.state} ${member.address.zipcode}</p>
+            <span>${member.address.street}</span><br>
+            <span>${member.address.city}, ${member.address.state} ${member.address.zipcode}</span>
             `;
         address.className = 'business-address';
         phone.textContent = `${member.phone}`;
