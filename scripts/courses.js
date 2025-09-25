@@ -84,6 +84,7 @@ const creditsTotal = document.getElementById('credits');
 const filterAll = document.getElementById('filter-all');
 const filterWdd = document.getElementById('filter-wdd');
 const filterCse = document.getElementById('filter-cse');
+const courseDetails = document.getElementById('course-details');
 
 let currentFilter = 'all';
 
@@ -117,6 +118,10 @@ function renderCourses(filter = 'all') {
             </div>
             <div class="course-status">${course.completed ? 'Completed' : 'In Progress'}</div>
         `;
+
+        courseCard.addEventListener('click', () => {
+            displayCourseDetails(course);
+        })
 
         coursesContainer.appendChild(courseCard);
     });
@@ -154,3 +159,22 @@ filterCse.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     renderCourses(currentFilter);
 });
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById('closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
