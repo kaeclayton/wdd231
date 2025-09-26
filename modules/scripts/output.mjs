@@ -1,5 +1,3 @@
-import byuiCourse from "./course.mjs";
-
 function setTitle(course) {
     document.querySelector("#courseName").textContent = course.name;
     document.querySelector("#courseCode").textContent = course.code;
@@ -15,5 +13,4 @@ function renderSections(sections) {
     document.querySelector("#sections").innerHTML = html.join("");
 }
 
-export function setTitle() {}
-export function renderSections() {}
+export { setTitle, renderSections };

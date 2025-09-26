@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = Number(document.querySelector("#sectionNumber").value);
-    byuiCourse.changeEnrollment(sectionNum);
-    renderSections(this.sections);
+    byuiCourse.changeEnrollment(sectionNum, true);
+    renderSections(byuiCourse.sections);
 });
 document.querySelector("#dropStudent").addEventListener("click", function () {
     const sectionNum = Number(document.querySelector("#sectionNumber").value);
     byuiCourse.changeEnrollment(sectionNum, false);
-    renderSections(this.sections);
+    renderSections(byuiCourse.sections);
 });
 

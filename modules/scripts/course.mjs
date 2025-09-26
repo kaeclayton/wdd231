@@ -16,7 +16,7 @@ const byuiCourse = {
             sectionNumber: 3,
             enrolled: 95,
             instructor: "Sister Smith",
-        },
+        }
     ],
     changeEnrollment: function (sectionNumber, add = true) {
         // Find the section with the given section number

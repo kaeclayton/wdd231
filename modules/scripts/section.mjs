@@ -1,3 +1,5 @@
+import byuiCourse from "./course.mjs";
+
 function setSectionSelection() {
     const sectionSelect = document.querySelector("#sectionNumber");
     sectionSelect.innerHTML = '<option value="0" disabled selected>--</option>';
@@ -8,4 +10,4 @@ function setSectionSelection() {
         sectionSelect.appendChild(option);
     });
 }  
-export function setSectionSelection() {}  
+export { setSectionSelection };  
