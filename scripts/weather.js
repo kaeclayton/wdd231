@@ -17,14 +17,14 @@ async function apiFetch(url) {
     }
 }
 
-apiFetch();
+apiFetch(url);
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    temp.innerHTML = `${data.main.temp}&deg;F`;
     const iconCode = data.weather[0].icon;
     const iconsrc = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
     let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src',iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
+    icon.setAttribute('src',iconsrc);
+    icon.setAttribute('alt', desc);
+    caption.textContent = `${desc}`;
 }
