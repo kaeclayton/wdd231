@@ -113,7 +113,6 @@ main {
     padding: 20px;
     contain: layout;
     background-color: var(--background-color);
-    padding: 20px;
 }
 h1 {
     color: var(--text-color);
@@ -121,11 +120,7 @@ h1 {
     font-weight: bold;
     margin-bottom: 20px;
 }
-h2 {
-    color: var(--primary-color);
-    text-align: center;
-}
-h3 {
+h2, h3 {
     color: var(--primary-color);
     text-align: center;
 }
@@ -193,10 +188,7 @@ aside p {
     height: 60px;
     object-fit: contain;
 }
-#home-business-spotlight .business-email {
-    color: var(--text-color);
-    font-size: small;
-}
+#home-business-spotlight .business-email,
 #home-business-spotlight .business-phone {
     color: var(--text-color);
     font-size: small;
