@@ -18,8 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <!-- <script src="scripts/directory.js" defer></script> -->
-    <script src="scripts/dates.js" defer></script>
+    <script type="mocule" src="scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -42,9 +41,21 @@
             <source media="(max-width: 1200px)" srcset="images/kauai-hero-1200w.webp" width="1200" height="600">
             <img src="images/kauai-hero-800w.webp" alt="Kaua'i shoreline" class="hero" width="800" height="400" loading="eager" fetchpriority="high">
         </picture>
+        <button class="join">Join Us!</button>
     </section>
     <main>
-
+        <h1>Home</h1>
+        <section>
+            <h2>Events</h2>
+            <p>placeholder</p>
+            <h2>Current Weather</h2>
+            <div id="currentWeather"></div>
+            <h2>Weather Forecast</h2>
+            <div id="forecast"></div>
+        </section>
+        <section>
+            <div id="home-business-spotlight"></div>
+        </section>
     </main>
     <footer>
         <div class="chamber">

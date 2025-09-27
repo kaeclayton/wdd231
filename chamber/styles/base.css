@@ -97,6 +97,18 @@ section {
     display: block;
     border-radius: var(--border-radius);
 }
+
+section button {
+    position: absolute;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    color: var(--text-color);
+}   
+
 /* Main */
 main {
     margin-top: 2rem;
