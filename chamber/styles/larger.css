@@ -36,4 +36,13 @@
     .social img {
         width: 32px;
     }
+    .events-weather {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+    #home-business-spotlight {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }    
