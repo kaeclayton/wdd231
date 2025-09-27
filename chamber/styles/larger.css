@@ -45,4 +45,17 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
+    .business-card--small {
+        flex-direction: column;
+        text-align: center;
+        min-height: 200px;
+        justify-content: center;
+    }
+    .business-card--small .business-name {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .business-card--small .business-logo {
+        margin-bottom: 10px;
+    }
 }    

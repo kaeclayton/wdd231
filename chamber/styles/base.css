@@ -8,6 +8,7 @@
 * {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+    font-display: swap;
 }
 /* Header */
 header {
@@ -169,37 +170,64 @@ aside p {
     padding: 5px;
     color: var(--text-color);
 }
-#home-business-spotlight .business-card {
+.business-card--small {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     border: 2px solid var(--text-color);
     border-radius: var(--border-radius);
-    padding: 10px;
+    padding: 15px;
     background-color: var(--secondary-color);
+    margin-bottom: 20px;
+    min-height: 120px;
 }
-#home-business-spotlight .business-card:hover {
-    transform: none;
-}
-#home-business-spotlight .business-name {
+.business-card--small .business-name {
     color: var(--primary-color);
     font-size: medium;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 5px;
 }
-#home-business-spotlight .business-logo {
+.business-card--small .business-logo {
     width: 60px;
     height: 60px;
     object-fit: contain;
+    flex-shrink: 0;
 }
-#home-business-spotlight .business-email,
-#home-business-spotlight .business-phone {
+.business-card--small .business-email,
+.business-card--small .business-phone {
     color: var(--text-color);
     font-size: small;
+    margin: 2px 0;
 }
-#home-business-spotlight .business-website {
+.business-card--small .business-website {
     color: var(--primary-color);
     font-size: small;
     text-decoration: none;
+    margin-top: 5px;
 }
-#home-business-spotlight .business-website:hover {
+.business-card--small .business-website:hover {
     text-decoration: underline;
+}
+#home-business-spotlight {
+    min-height: 400px;
+    /* Reserve space for 3 cards */
+    position: relative;
+}
+
+/* Add skeleton loading effect */
+#home-business-spotlight:empty::before {
+    content: "Loading businesses...";
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.business-card--small {
+    /* Ensure consistent sizing */
+    min-height: 120px;
+    contain: layout style paint;
+    /* Prevent layout shifts */
 }
 /* Footer */
 footer {
