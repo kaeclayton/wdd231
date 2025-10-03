@@ -222,6 +222,7 @@ aside p {
     min-height: 120px;
     contain: layout style paint;
 }
+/* Join page specific css */
 main.join-page {
     display: block;
 }
@@ -341,7 +342,6 @@ dialog button {
     color: var(--text-color);
     text-align: center;
 }
-
 @keyframes cardEntrance {
     0% {
         opacity: 0;
@@ -358,8 +358,6 @@ dialog button {
         transform: translateY(0) scale(1);
     }
 }
-
-/* Sequential timing */
 .membership-card:nth-child(1) {
     animation-delay: 0.1s;
 }
@@ -374,6 +372,36 @@ dialog button {
 
 .membership-card:nth-child(4) {
     animation-delay: 0.4s;
+}
+/* Discover page specific CSS */
+#places div {
+    margin: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "location";
+}
+#places div h2 {
+    margin: 5px;
+    grid-area: name;
+}
+#places div img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    grid-area: photo;
+}
+#places div p {
+    margin: 5px;
+    grid-area: description;
+}
+#places div address {
+    margin: 5px;
+    grid-area: location;
 }
 /* Footer */
 footer {

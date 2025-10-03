@@ -4,6 +4,7 @@ import { initWeather } from "./weather.mjs";
 import { initDates } from "./dates.mjs";
 import { initModals } from "./modal.mjs";
 import { initThankYou } from "./thankyou.mjs";
+import { initPlaces } from "./places.mjs";
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded - starting initialization');
@@ -38,6 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (userDataDiv) {
         initThankYou();
         console.log('Thank you page initialized');
+    }
+
+    const discoverPlaces = document.querySelector('#places');
+    if (discoverPlaces) {
+        initPlaces();
+        console.log('Places initialized')
     }
 });
 

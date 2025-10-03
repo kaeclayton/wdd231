@@ -62,4 +62,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    #places div {
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location";
+    }
+    #places div img {
+        width: 300px;
+    }
 }    
