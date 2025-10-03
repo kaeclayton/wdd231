@@ -2,9 +2,17 @@ import { initNavigation } from "./navigation.mjs";
 import { displayHomeBusinesses } from "./home-businesses.mjs";
 import { initWeather } from "./weather.mjs";
 import { initDates } from "./dates.mjs";
+import { initModals } from "./modal.mjs";
+import { initThankYou } from "./thankyou.mjs";
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded - starting initialization');
+
+    const timestampField = document.getElementById('timestamp');
+    if (timestampField) {
+        timestampField.value = new Date().toISOString();
+        console.log('Timestamp set to:', timestampField.value);
+    }
 
     initNavigation();
     console.log('Navigation initialized');
@@ -22,6 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initWeather();
     console.log('Weather initialization called');
+
+    initModals();
+    console.log('Modals initialized');
+
+    const userDataDiv = document.querySelector('#user-data');
+    if (userDataDiv) {
+        initThankYou();
+        console.log('Thank you page initialized');
+    }
 });
 
 window.addEventListener('load', () => {

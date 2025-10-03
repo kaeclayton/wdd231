@@ -58,4 +58,8 @@
     .business-card--small .business-logo {
         margin-bottom: 10px;
     }
+    main.join-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }    

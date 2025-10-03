@@ -222,6 +222,159 @@ aside p {
     min-height: 120px;
     contain: layout style paint;
 }
+main.join-page {
+    display: block;
+}
+form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 10px;
+}
+legend {
+    color: var(--primary-color);
+}
+label {
+    color: var(--text-color);
+    font-size: small;
+    display: block;
+    margin-bottom: 2px;
+}
+input {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 5px;
+    margin-bottom: 6px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--text-color);
+}
+input:required {
+    border-left: 5px solid #ff4444;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 8px;
+}
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    font-size: smaller;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--text-color);
+}
+input[type="radio"] {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+input[type="radio"] + label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 0;
+    vertical-align: middle;
+}
+input[type="submit"] {
+    width: 150px;
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #FDBCB4;
+    color: #112A46;
+}
+.membership-card {
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    margin: 20px;
+    background-color: #FFEBE8;
+    text-align: center;
+}
+.membership-card button {
+    border: 1px solid var(--text-color);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+dialog {
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--text-color);
+    border-radius: var(--border-radius);
+    /* box-shadow:; */
+}
+dialog ul {
+    color: var(--text-color);
+}
+dialog button {
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+::backdrop {
+    background-color: #FFEBE8;
+    opacity: 0.7;
+}
+.membership-card {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+    animation: cardEntrance 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.confirmation-details p {
+    color: var(--text-color);
+    text-align: center;
+}
+
+@keyframes cardEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(15px) scale(0.95);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(-2px) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Sequential timing */
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
 /* Footer */
 footer {
     display: flex;
