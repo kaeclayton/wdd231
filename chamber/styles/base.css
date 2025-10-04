@@ -376,6 +376,7 @@ dialog button {
     bottom: 10px;
     right: 10px;
     padding: 20px;
+    margin: 0;
     max-width: none;
     color: var(--primary-color);
     background-color: #FFEBE8;
@@ -414,6 +415,7 @@ dialog button {
 }
 #places div img {
     width: 100%;
+    height: auto;
     border-radius: var(--border-radius);
     grid-area: photo;
 }
@@ -435,7 +437,6 @@ footer {
     border-radius: var(--border-radius);
     position: relative;
     contain: layout;
-    min-height: 200px;
 }
 .chamber p, .foot p {
     margin: 0.1em 0;
