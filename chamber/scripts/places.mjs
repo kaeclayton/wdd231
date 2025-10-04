@@ -11,6 +11,7 @@ export function initPlaces() {
             myPhoto.src = x.photo;
             myPhoto.alt = x.name;
             
+            
             const myTitle = document.createElement('h2');
             myTitle.innerText = x.name;
 

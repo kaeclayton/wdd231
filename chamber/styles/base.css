@@ -374,6 +374,31 @@ dialog button {
     animation-delay: 0.4s;
 }
 /* Discover page specific CSS */
+.message-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    max-width: none;
+    color: var(--primary-color);
+    background-color: #FFEBE8;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.message-overlay .close-btn {
+    position: absolute;
+    right: 2px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+.message-overlay .close-btn:hover {
+    color: red;
+}
 #places div {
     margin: 10px;
     border: 1px solid var(--primary-color);
@@ -403,6 +428,7 @@ dialog button {
     margin: 5px;
     grid-area: location;
 }
+
 /* Footer */
 footer {
     display: flex;

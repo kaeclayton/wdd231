@@ -5,6 +5,7 @@ import { initDates } from "./dates.mjs";
 import { initModals } from "./modal.mjs";
 import { initThankYou } from "./thankyou.mjs";
 import { initPlaces } from "./places.mjs";
+import { initVisit } from "./visit.mjs";
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded - starting initialization');
@@ -45,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (discoverPlaces) {
         initPlaces();
         console.log('Places initialized')
+    }
+
+    const visitMessage = document.querySelector('#visit-message');
+    if (visitMessage) {
+        initVisit();
+        console.log('Visit message initialized')
     }
 });
 
