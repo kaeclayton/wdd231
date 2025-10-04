@@ -1,57 +1,64 @@
 import { initNavigation } from "./navigation.mjs";
-import { displayHomeBusinesses } from "./home-businesses.mjs";
-import { initWeather } from "./weather.mjs";
 import { initDates } from "./dates.mjs";
-import { initModals } from "./modal.mjs";
-import { initThankYou } from "./thankyou.mjs";
-import { initPlaces } from "./places.mjs";
-import { initVisit } from "./visit.mjs";
+
+function getCurrentPage() {
+    const path = window.location.pathname;
+    if (path.includes('discover.html')) return 'discover';
+    if (path.includes('directory.html')) return 'directory';
+    if (path.includes('join.html')) return 'join';
+    if (path.includes('thankyou.html')) return 'thankyou';
+    return 'home';
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded - starting initialization');
+    const page = getCurrentPage();
+    console.log(`Initializing ${page} page`);
 
+    // Always initialize these
+    initNavigation();
+    initDates();
+
+    // Set timestamp if exists
     const timestampField = document.getElementById('timestamp');
     if (timestampField) {
         timestampField.value = new Date().toISOString();
-        console.log('Timestamp set to:', timestampField.value);
     }
 
-    initNavigation();
-    console.log('Navigation initialized');
-
-    initDates();
-    console.log('Dates initialized');
-
-    const homeBusinessContainer = document.querySelector('#home-business-spotlight');
-    console.log('Business container:', homeBusinessContainer);
-
-    if (homeBusinessContainer) {
-        displayHomeBusinesses(homeBusinessContainer, 3);
-        console.log('Business display function called');
+    // Load page-specific modules
+    if (page === 'home') {
+        import("./home-businesses.mjs")
+            .then(module => {
+                const container = document.querySelector('#home-business-spotlight');
+                if (container) module.displayHomeBusinesses(container, 3);
+            });
+        import("./weather.mjs")
+            .then(module => module.initWeather());
     }
 
-    initWeather();
-    console.log('Weather initialization called');
-
-    initModals();
-    console.log('Modals initialized');
-
-    const userDataDiv = document.querySelector('#user-data');
-    if (userDataDiv) {
-        initThankYou();
-        console.log('Thank you page initialized');
+    if (page === 'discover') {
+        import("./places.mjs")
+            .then(module => {
+                const places = document.querySelector('#places');
+                if (places) module.initPlaces();
+            });
+        import("./visit.mjs")
+            .then(module => {
+                const visitMsg = document.querySelector('#visit-message');
+                if (visitMsg) module.initVisit();
+            });
     }
 
-    const discoverPlaces = document.querySelector('#places');
-    if (discoverPlaces) {
-        initPlaces();
-        console.log('Places initialized')
+    if (page === 'join') {
+        import("./modal.mjs")
+            .then(module => module.initModals());
     }
 
-    const visitMessage = document.querySelector('#visit-message');
-    if (visitMessage) {
-        initVisit();
-        console.log('Visit message initialized')
+    if (page === 'thankyou') {
+        import("./thankyou.mjs")
+            .then(module => {
+                const userData = document.querySelector('#user-data');
+                if (userData) module.initThankYou();
+            });
     }
 });
 
